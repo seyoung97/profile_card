@@ -1,0 +1,148 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+
+section {
+	width: 340px;
+	padding: 30px;
+	margin: 50px auto;
+	background: #fff;
+	box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+}
+/* 마진값으로 가운데 정렬. 박스쉐도우로 은은한효과를 줌  */
+
+section nav.menu {
+	width: 100%;
+}
+section nav.menu::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+section nav.menu a:nth-of-type(1) {
+	float: left;
+}
+section nav.menu a:nth-of-type(2) {
+	float: right;
+}
+
+section article.profile {
+	width: 100%;
+	text-align: center;
+}
+section article.profile img {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	margin-bottom: 20px;
+}
+section article.profile h1 {
+	font-size: 22px;
+	font-family: 'arial';
+	color: #555;
+	margin-bottom: 5px;
+}
+section article.profile h2 {
+	font-weight: normal;
+	font-size: 12px;
+	font-family: 'arial';
+	color: #bbb;
+	margin-bottom: 30px;
+}
+section article.profile .btnView {
+	display: block;
+	width: 180px;
+	height: 32px;
+	margin: 0 auto;
+	border-radius: 16px;
+	font-weight: bold;
+	font-size: 10px;
+	line-height: 32px;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+section ul.contact {
+	width: 100%;
+	margin-bottom: 25px;
+}
+section ul.contact li {
+	width: 100%;
+	border-bottom: 1px solid #eee;
+	padding: 10px 0px;
+}
+
+section ul.contact li:nth-of-type(2) {
+	border-bottom: none;
+}
+
+section ul.contact li i {
+	width: 20%;
+	text-align: center;
+	font-size: 15px;
+	color: #555;
+	text-shadow: 2px 2px 2px #ddd;
+}
+section ul.contact li span {
+	font-size: 11px;
+	font-family: 'Orbitron';
+	color: #555;
+	letter-spacing: 1px;
+}
+
+section nav.others {
+	width: 100%;
+	font-size: 0px;
+	text-align: center;
+}
+section nav.others a {
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin: 0 10px;
+	opacity: 0.4;
+}
+section nav.others a.on {
+	opacity: 1;
+}
+section nav.others a:nth-of-type(1) {
+	background-color: #35e0f7;
+	box-shadow: 5px 5px 10px rgba(74, 255, 255, 0.7);
+}
+section nav.others a:nth-of-type(2) {
+	background-color: #55f5cd;
+	box-shadow: 5px 5px 10px rgba(85, 245, 255, 0.7);
+}
+section nav.others a:nth-of-type(3) {
+	background-color: #ff80df;
+	box-shadow: 5px 5px 10px rgba(255, 128, 223, 0.7);
+}
+section nav.others a:nth-of-type(4) {
+	background-color: #a794fd;
+	box-shadow: 5px 5px 10px rgba(167, 148, 253, 0.7);
+}
+
+.mamber1 {
+	background: #ebfaff;
+}
+.mamber1 section article.profile img {
+	box-shadow: 5px 15px 30px #bdccb783;
+}
+
+.mamber1 section article.profile .btnView {
+	background: linear-gradient(45deg, #4affff, #35e0f7);
+}
